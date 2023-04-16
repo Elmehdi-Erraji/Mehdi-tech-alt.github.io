@@ -6,18 +6,6 @@
  - Responsive design
 
 
-![](screenshot.jpg)
-
-
-### 🚀 Youtube video
-https://youtu.be/diIbwA-BAgo
-
-### 🔥 Demo
-https://portfolio-dev-chapter.vercel.app/
-
-### 📁 Assets
-<hr>
-
 #### Images
 https://unsplash.com
 

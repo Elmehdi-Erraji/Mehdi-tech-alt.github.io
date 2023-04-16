@@ -1,4 +1,4 @@
-const TOKEN = '';
+const TOKEN = '5866004686:AAHjvem_3D6poEYXwUHEMmvnZAwvwRa4sfE';
 const CHAT_ID = '5393516822';
 const requestHeaders = {
     "Access-Control-Allow-Origin": "*",
