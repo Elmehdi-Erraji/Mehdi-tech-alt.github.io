@@ -1,5 +1,5 @@
 const TOKEN = '5998137006:AAF2Qs97mJwuDnACgiOJXLlkRFza_SZqoco';
-const CHAT_ID = '-1005393516822';
+const CHAT_ID = 'https://t.me/testGrpc';
 const requestHeaders = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
