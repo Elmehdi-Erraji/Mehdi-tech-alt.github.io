@@ -514,7 +514,13 @@
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-form">
-                    <form name="contactForm">
+
+
+
+
+<!--
+                    <form name="contactForm" >
+                    
                         <p class="success-submit-message">Your message has been successfully sent.</p>
                         <p class="fail-submit-message">An error occurred while sending the message.</p>
                         <div class="form-control">
@@ -529,11 +535,58 @@
                             <textarea name="message" rows="8" placeholder="Message" data-aos="fade-up" data-aos-delay="150"></textarea>
                             <p class="validation-error message">Please enter your message.</p>
                         </div>
+
+
                         <button class="btn btn-primary submit-btn" data-aos="fade-up" data-aos-delay="200">
                             Submit
                             <span class="loading"></span>
                         </button>
+
+
                     </form>
+
+-->
+
+
+
+<form action="https://formspree.io/f/moqzydpe" method="POST" onsubmit="return validateForm()">
+    <p class="success-submit-message">Your message has been successfully sent.</p>
+    <p class="fail-submit-message">An error occurred while sending the message.</p>
+
+<div class="form-control">
+    <input type="email" name="email" class="mb-24" type="text" placeholder="Email" data-aos="fade-up" data-aos-delay="100">
+    <p class="validation-error email">Please enter a valid email address.</p>
+</div>
+<div class="form-control">
+    <textarea name="message" rows="8" placeholder="Message" data-aos="fade-up" data-aos-delay="150"></textarea>
+    <p class="validation-error message">Please enter your message.</p>
+</div>
+
+  <!-- your other form fields go here -->
+  <button class="btn btn-primary submit-btn" data-aos="fade-up" data-aos-delay="200" type="submit">
+    Submit
+    <span class="loading"></span>
+</button>
+</form>
+
+
+<script>
+     function validateForm() {
+        var email = document.forms[0]["email"].value;
+        var message = document.forms[0]["message"].value;
+
+        if (email == "") {
+            document.querySelector(".validation-error.email").style.display = "block";
+            return false;
+        }
+        if (message == "") {
+            document.querySelector(".validation-error.message").style.display = "block";
+            return false;
+        }
+        return true;
+    }
+</script>
+
                 </div>
                 <div class="contact-info">
                     <div class="contact-info-item" data-aos="fade-up" data-aos-delay="50">
