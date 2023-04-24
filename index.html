@@ -66,7 +66,7 @@
         <div class="container">
             <div class="content" data-aos="fade-up">
                 <p class="above-title mb-16">My name is</p>
-                <h1 class="full-name">El Mehdi <span class="primary">Er-raji.</span></h1>
+                <h1 class="full-name">El Mehdi <span class="primary">Er.raji</span></h1>
                 <p class="about">Creative junior full stack web developer with +3 years of experience in both enterprise companies and startups. My proficiency includes HTML, CSS, JavaScript, PHP, and MySQL. Additionally, I possess a solid understanding of C/C++, shell scripting, and networking.</p>
                 <a href="assets/resume.pdf" target="_blank" class="btn btn-outline-light download-resume-mobile">Download Resume</a>
                 <ul class="social-icons">
@@ -553,14 +553,18 @@
     <p class="success-submit-message">Your message has been successfully sent.</p>
     <p class="fail-submit-message">An error occurred while sending the message.</p>
 
-<div class="form-control">
-    <input type="email" name="email" class="mb-24" type="text" placeholder="Email" data-aos="fade-up" data-aos-delay="100">
-    <p class="validation-error email">Please enter a valid email address.</p>
-</div>
-<div class="form-control">
-    <textarea name="message" rows="8" placeholder="Message" data-aos="fade-up" data-aos-delay="150"></textarea>
-    <p class="validation-error message">Please enter your message.</p>
-</div>
+    <div class="form-control">
+        <input name="name" class="mb-16" type="text" placeholder="Name" data-aos="fade-up" data-aos-delay="50">
+        <p class="validation-error name">Please enter your name.</p>
+    </div>
+    <div class="form-control">
+        <input type="email" name="email" class="mb-24" type="text" placeholder="Email" data-aos="fade-up" data-aos-delay="100">
+        <p class="validation-error email">Please enter a valid email address.</p>
+    </div>
+    <div class="form-control">
+        <textarea name="message" rows="8" placeholder="Message" data-aos="fade-up" data-aos-delay="150"></textarea>
+        <p class="validation-error message">Please enter your message.</p>
+    </div>
 
   <!-- your other form fields go here -->
   <button class="btn btn-primary submit-btn" data-aos="fade-up" data-aos-delay="200" type="submit">
@@ -572,9 +576,14 @@
 
 <script>
      function validateForm() {
+        var name = document.forms[0]["name"].value;
         var email = document.forms[0]["email"].value;
         var message = document.forms[0]["message"].value;
 
+        if (name == "") {
+            document.querySelector(".validation-error.name").style.display = "block";
+            return false;
+        }
         if (email == "") {
             document.querySelector(".validation-error.email").style.display = "block";
             return false;
@@ -660,7 +669,7 @@
             </a>
         </li>
     </ul>
-    <p class="copyright" data-aos="fade-up" data-aos-delay="100">© <span class="year">year</span>  -  Mehdi <span class="bold">Er.raji</span></p>
+    <p class="copyright" data-aos="fade-up" data-aos-delay="100">© <span class="year">year</span>  -  El Mehdi <span class="bold">Er.raji</span></p>
 </footer>
 </body>
 <script src="assets/js/aos.js"></script>
