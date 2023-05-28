@@ -1,5 +1,4 @@
-# Responsive Personal Portfolio - Dev Chapter
- - Real contact form connected to Telegram
+# Responsive Personal Portfolio - 
  - Dark and light version
  - Load content on scroll,
  - Only with HTML CSS & JavaScript
