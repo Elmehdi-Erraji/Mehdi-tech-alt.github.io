@@ -47,12 +47,12 @@
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+   /* transition: opacity .5s ease-out, visibility 0s linear .5s;*/
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+   /* transition: opacity .5s ease-out, visibility 0s linear 0s; */
     visibility: visible;
     opacity: 1;
 }
@@ -82,7 +82,7 @@ h6,
 .btn {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    transition: .5s;
+   /* transition: .5s;*/
 }
 
 .btn-primary,
@@ -133,7 +133,7 @@ h6,
     font-size: 18px;
     font-weight: 600;
     outline: none;
-    transition: .5s;
+    /* transition: .5s; */
 }
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {
@@ -196,7 +196,7 @@ h6,
         bottom: -1px;
         left: 50%;
         background: var(--primary);
-        transition: .5s;
+        /* transition: .5s; */
     }
 
     .navbar-dark .navbar-nav .nav-link:hover::before,
@@ -315,7 +315,7 @@ h6,
     position: relative;
     height: 300px;
     padding: 0 30px;
-    transition: .5s;
+    /* transition: .5s; */
 }
 
 .service-item .service-icon {
@@ -365,7 +365,7 @@ h6,
     height: 15px;
     background: #DDDDDD;
     border-radius: 2px;
-    transition: .5s;
+    /* transition: .5s; */
 }
 
 .testimonial-carousel .owl-dot.active {
@@ -378,9 +378,9 @@ h6,
     z-index: 1;
 }
 
-.testimonial-carousel .owl-item .testimonial-item {
-    transition: .5s;
-}
+/* .testimonial-carousel .owl-item .testimonial-item {
+    /* transition: .5s; */
+} */
 
 .testimonial-carousel .owl-item.center .testimonial-item {
     background: #FFFFFF !important;
@@ -389,9 +389,9 @@ h6,
 
 
 /*** Team ***/
-.team-item {
+/* .team-item {
     transition: .5s;
-}
+} */
 
 .team-social {
     position: absolute;
@@ -402,7 +402,7 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .5s;
+    /* transition: .5s; */
 }
 
 .team-social a.btn {
@@ -423,36 +423,36 @@ h6,
 .team-item:hover .team-social a.btn:first-child {
     opacity: 1;
     margin-top: 0;
-    transition: .3s 0s;
+    /* transition: .3s 0s; */
 }
 
 .team-item:hover .team-social a.btn:nth-child(2) {
     opacity: 1;
     margin-top: 0;
-    transition: .3s .05s;
+    /* transition: .3s .05s; */
 }
 
 .team-item:hover .team-social a.btn:nth-child(3) {
     opacity: 1;
     margin-top: 0;
-    transition: .3s .1s;
+    /* transition: .3s .1s; */
 }
 
 .team-item:hover .team-social a.btn:nth-child(4) {
     opacity: 1;
     margin-top: 0;
-    transition: .3s .15s;
+    /* transition: .3s .15s; */
 }
 
-.team-item .team-img img,
+/* .team-item .team-img img,
 .blog-item .blog-img img  {
     transition: .5s;
-}
+} */
 
-.team-item:hover .team-img img,
+/* .team-item:hover .team-img img,
 .blog-item:hover .blog-img img {
     transform: scale(1.15);
-}
+} */
 
 
 /*** Miscellaneous ***/
@@ -477,9 +477,9 @@ h6,
     background-size: cover;
 }
 
-.link-animated a {
+/* .link-animated a {
     transition: .5s;
-}
+} */
 
 .link-animated a:hover {
     padding-left: 10px;
