@@ -68,7 +68,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   position: relative;
   color: #2e3135;
@@ -1095,7 +1095,7 @@ section {
   }
 
   .testimonials .testimonial-item {
-    padding: 30px;
+    padding: 0px;
     margin: 15px;
   }
 
@@ -1898,7 +1898,7 @@ section {
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 700;
   position: relative;
 }
@@ -1918,7 +1918,7 @@ section {
 
 @media (max-width: 768px) {
   .hero .info h2 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
@@ -1951,7 +1951,7 @@ section {
 
 @media (min-width: 640px) {
   .hero .carousel-control-prev {
-    padding-left: 15px;
+    padding-left: 14px;
   }
 }
 
