@@ -1184,7 +1184,7 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about h2 {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 700;
   font-family: var(--font-secondary);
   margin: 30px 0;
