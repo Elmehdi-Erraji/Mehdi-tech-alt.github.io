@@ -68,7 +68,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 28px;
+  font-size: 21.75px;
   font-weight: 700;
   position: relative;
   color: #2e3135;
@@ -95,9 +95,11 @@ section {
   margin: 0 auto 0 auto;
 }
 
-@media (min-width: 1199px) {
-  .section-header p {
+
+  @media (max-width: 768px) {
+    .section-header p h2{
     max-width: 60%;
+    font-size: 24px;
   }
 }
 
