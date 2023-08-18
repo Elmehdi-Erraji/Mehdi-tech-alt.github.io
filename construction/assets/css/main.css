@@ -1918,15 +1918,15 @@ section {
   margin: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .hero .info h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
 .hero .info p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .hero .info .btn-get-started {
