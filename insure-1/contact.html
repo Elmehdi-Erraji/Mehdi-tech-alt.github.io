@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Insure -  </title>
+     <title>Insure -  </title>
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon-16x16.png">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -56,13 +57,8 @@
       class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
     >
       <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <h1 class="m-0">
-          <img
-            class="img-fluid me-3"
-            src="img/icon/icon-02-primary.png"
-            alt=""
-          />Insure
-        </h1>
+        <h1 class="m-0 logo" > 
+          <img class="img-fluid me-3" src="img/Untitled design (8).png" alt=""/></h1>
       </a>
       <button
         type="button"
@@ -113,7 +109,7 @@
             <li class="breadcrumb-item"><a href="#">Start</a></li>
             
             <li class="breadcrumb-item active" aria-current="page">
-              Contact Us
+              Kontakt
             </li>
           </ol>
         </nav>
@@ -128,55 +124,47 @@
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             
             
-            <form>
+            <form action="contact-form1.php" method="POST">
               <div class="row g-3">
+
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                    />
+                    <input type="text" class="form-control"  name="name" id="name" placeholder="Your Name" required/>            
                     <label for="name">Name</label>
                   </div>
                 </div>
+
+
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Your Email"
-                    />
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required/>
                     <label for="email">E-mail Adresse</label>
                   </div>
                 </div>
+
+
                 <div class="col-12">
                   <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="Subject"
-                    />
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required  />
+                     
+                     
+                     
+                     
+                     
+                     
+                  
                     <label for="subject">Betreff</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="phone" placeholder="Telefonnummer"/>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefonnummer" required/>
                     <label for="subject">Telefonnummer</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-floating">
-                    <textarea
-                      class="form-control"
-                      placeholder="Leave a message here"
-                      id="message"
-                      style="height: 100px"
-                    ></textarea>
+                    <textarea class="form-control" placeholder="Leave a message here" name="message" id="message" style="height: 150px" required></textarea>
                     <label for="message">Nachricht</label>
                   </div>
                 </div>

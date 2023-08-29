@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Insure -  </title>
+     <title>Insure -  </title>
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon-16x16.png">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -37,7 +38,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-
+    
+    <script src="https://kit.fontawesome.com/152030881d.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -49,24 +51,16 @@
       id="spinner"
       class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
     >
-      <div class="spinner-grow text-primary" role="status"></div>
+      <div class="spinner-grow text-primary" role="status"> </div>
     </div>
     <!-- Spinner End -->
 
-   
 
     <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
-    >
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
       <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <h1 class="m-0">
-          <img
-            class="img-fluid me-3"
-            src="img/icon/icon-02-primary.png"
-            alt=""
-          />Insure
-        </h1>
+        <h1 class="m-0 logo" > 
+          <img class="img-fluid me-3" src="img/Untitled design (8).png" alt=""/></h1> 
       </a>
       <button
         type="button"
@@ -80,6 +74,7 @@
         <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
           <a href="index.html" class="nav-item nav-link active">Start</a>
            
+          
           <div class="nav-item dropdown">
             <a
               href="#"
@@ -187,12 +182,12 @@
       </div>
       <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
         <div class="bg-light rounded p-5">
-          <form>
+          <form action="contact-form2.php" method="POST">
             <div class="row g-3">
 
               <div class="col-sm-6">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="gname" placeholder="Name"/>
+                  <input type="text" class="form-control" name="name" id="gname" placeholder="Name" required/>
                   <label for="gname">Name</label>
                 </div>
               </div>
@@ -200,7 +195,7 @@
 
               <div class="col-sm-6">
                 <div class="form-floating">   
-                  <input type="email" class="form-control" id="gmail"placeholder="E-mail"/>
+                  <input type="email" class="form-control" name="email" id="gmail"placeholder="E-mail" required/>
                   <label for="gmail">E-mail</label>
                 </div>
               </div>
@@ -208,27 +203,30 @@
 
               <div class="col-sm-6">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="cname" placeholder="Telefonnummer"/>
+                  <input type="text" class="form-control" name="phone" id="cname" placeholder="Telefonnummer" required/>
                     <label for="cname">Telefonnummer</label>                 
                 </div>
               </div>
 
 
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <input  type="text"  class="form-control" id="cage" placeholder="Child Age"/>                 
-                  <label for="cage">Unsere Leistungen</label>
-                </div>
-              </div>
+              <div class="col-12 col-sm-6"  style=" border: 1px ;">
+                <select class="form-select form-floating " name="select_service" style="height: 55px;" required >
+                    <option value="">Unsere Leistungen</option>
+                    <option value="Schadenfall" >Schadenfall</option>
+                    <option value="Gutachten" >Gutachten</option>
+                    <option value="Rechnungsprüfung" >Rechnungsprüfung</option>
+                    <option value=">Service für Werkstätten" >Service für Werkstätten</option>
+                </select>
+            </div>
+              	
 
-             
+            
 
-              
-	          					
+           
 
               <div class="col-12">
                 <div class="form-floating">
-                  <textarea class="form-control"placeholder="Leave a message here"  id="message"style="height: 80px"></textarea>
+                  <textarea class="form-control"placeholder="Leave a message here" name="message" id="message"style="height: 80px" required></textarea>
                   <label for="message">Nachricht</label>
                 </div>
               </div>
@@ -779,7 +777,7 @@
             <p>
               <i class="fa fa-map-marker-alt me-3"></i>Friedrich Engels Allee 290, <br> 42285 Wuppertal
             </p>
-            <p><i class="fa fa-phone-alt me-3"></i> 0202 29796594</p>
+            <p><i class="fa-solid fa-phone"></i></i> 0202 29796594</p>
             <p><i class="fa fa-envelope me-3"></i>info@360gutachten.de</p>
           </div>
           <div class="col-lg-3 col-md-6">

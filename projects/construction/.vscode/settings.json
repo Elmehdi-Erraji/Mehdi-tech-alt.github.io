@@ -1,4 +1,5 @@
 {
     "locale": "en",
-    "google-translate.firstLanguage": "en"
+    "google-translate.firstLanguage": "en",
+    "liveServer.settings.port": 5501
 }
