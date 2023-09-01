@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #015FC9;
-    --secondary: #0DD3F1;
+    --primary: #7F7F7F ;
+    --secondary: #333333 ;
     --light: #F6F7FC;
-    --dark: #15233C;
+    --dark: #CCCCCC ;
 }
 
 .back-to-top {
@@ -243,7 +243,7 @@
 }
 
 .container.facts .facts-text {
-    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url(../img/carousel-1.jpg) center right no-repeat;
+    background: linear-gradient(rgba(127, 127, 127, 0), rgba(127, 127, 127, 1)), url(../img/carousel-1.jpg) center right no-repeat;
     background-size: cover;
 }
 
