@@ -129,24 +129,128 @@
     <!-- Navbar End -->
     <section id="hero" class="hero">
 
-      <div class="info d-flex align-items-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 text-center">
-              <h2 data-aos="fade-down">Wir stehen Ihnen zur Seite</span></h2>
-              <p>Schneller Service vor Ort. Kostenlose Beratung.24h Erreichbarkeit</p>
-              <a data-aos="fade-up" data-aos-delay="200" href="tel:+49020229796594" class="btn-get-started" target="_blank">+49 020229796594</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      
   
       <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
   
-        <div class="carousel-item active" style="background-image: url(img/1.png)"></div>
+        <div class="carousel-item active" style="background-image: url(img/1.png)">
+          <div class="info d-flex align-items-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                  <h2 data-aos="fade-down">Ihr Spezialist für Unfallbetreuung.</span></h2>
+                  <p>Schneller Service vor Ort. <br> Kostenlose Beratung. <br>24h Erreichbarkeit</p>
+                  <a id="callButton" data-aos="fade-up" data-aos-delay="200" href="tel:+49020229796594" class="btn-get-started" target="_blank">+49 020229796594</a>
+                  <script>
+                    // Get a reference to the anchor element
+                    const callButton = document.getElementById('callButton');
+                    
+                    // Function to check if the viewport width is below the mobile breakpoint
+                    function isMobileView() {
+                        return window.innerWidth <= 768; // Adjust the breakpoint as needed
+                    }
+                    
+                    // Function to update the anchor text based on the viewport width
+                    function updateButtonText() {
+                        if (isMobileView()) {
+                            callButton.textContent = 'Call Us';
+                        } else {
+                            callButton.textContent = '+49 020229796594'; // Replace with your phone number
+                        }
+                    }
+                    
+                    // Add an event listener to update the anchor text on window resize
+                    window.addEventListener('resize', updateButtonText);
+                    
+                    // Initial call to set the anchor text based on the viewport width
+                    updateButtonText();
+                    
+                    
+                    </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <div class="carousel-item" style="background-image: url(img/2.png)"></div>
-        <div class="carousel-item" style="background-image: url(img/3.png)"></div>
+        <div class="carousel-item" style="background-image: url(img/2.png)">
+          <div class="info d-flex align-items-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                  <h2 data-aos="fade-down">Wir stehen Ihnen zur Seite</span></h2>
+                  <p>Schneller Service vor Ort. <br> Kostenlose Beratung. <br>24h Erreichbarkeit</p>
+                  <a id="callButton1" data-aos="fade-up" data-aos-delay="200" href="tel:+49020229796594" class="btn-get-started" target="_blank">+49 020229796594</a>
+                  <script>
+                    // Get a reference to the anchor element
+                    const callButton1 = document.getElementById('callButton1');
+                    
+                    // Function to check if the viewport width is below the mobile breakpoint
+                    function isMobileView() {
+                        return window.innerWidth <= 768; // Adjust the breakpoint as needed
+                    }
+                    
+                    // Function to update the anchor text based on the viewport width
+                    function updateButtonText() {
+                        if (isMobileView()) {
+                            callButton1.textContent = 'Call Us';
+                        } else {
+                            callButton1.textContent = '+49 020229796594'; // Replace with your phone number
+                        }
+                    }
+                    
+                    // Add an event listener to update the anchor text on window resize
+                    window.addEventListener('resize', updateButtonText);
+                    
+                    // Initial call to set the anchor text based on the viewport width
+                    updateButtonText();
+                    
+                    
+                    </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(img/3.png)">
+          <div class="info d-flex align-items-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                  <h2 data-aos="fade-down">Gemeinsam im Einsatz.</span></h2>
+                  <p>Schneller Service vor Ort. <br> Kostenlose Beratung. <br>24h Erreichbarkeit</p>
+                  <a id="callButton2" data-aos="fade-up" data-aos-delay="200" href="tel:+49020229796594" class="btn-get-started" target="_blank">+49 020229796594</a>
+                  <script>
+                    // Get a reference to the anchor element
+                    const callButton2 = document.getElementById('callButton2');
+                    
+                    // Function to check if the viewport width is below the mobile breakpoint
+                    function isMobileView() {
+                        return window.innerWidth <= 768; // Adjust the breakpoint as needed
+                    }
+                    
+                    // Function to update the anchor text based on the viewport width
+                    function updateButtonText() {
+                        if (isMobileView()) {
+                            callButton2.textContent = 'Call Us';
+                        } else {
+                            callButton2.textContent = '+49 020229796594'; // Replace with your phone number
+                        }
+                    }
+                    
+                    // Add an event listener to update the anchor text on window resize
+                    window.addEventListener('resize', updateButtonText);
+                    
+                    // Initial call to set the anchor text based on the viewport width
+                    updateButtonText();
+                    
+                    
+                    </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
        
       </div>
   

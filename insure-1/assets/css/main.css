@@ -203,6 +203,8 @@ section {
   background: var(--color-primary);
 }
 
+
+
 .hero .carousel-control-prev {
   justify-content: start;
 }
