@@ -1,6 +1,6 @@
 <?php 
 
-$myemail = 'elmehdiworkemail@gmail.com';
+$myemail = 'info@360gutachten.de';
 
 
 $name = $_POST['name']; 
@@ -20,5 +20,5 @@ $message = $_POST['message'];
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
-	header('Location: contact.php'); 
+	header('Location: contact.html'); 
 ?>
